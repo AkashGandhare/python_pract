@@ -12,14 +12,14 @@ def shuffle_list(userList):
 	shuffle(userList)
 	return userList
 
-def enterGuess():
+def enter_Guess():
 	guess = input("enter a guess from '0', '1' or '2'\n")	
 	while guess not in ['0','1','2']:		
 		guess = input("enter a guess from '0', '1' or '2' \n")
 
 	return int(guess);
 
-def checkGuess(myList, guess):
+def check_Guess(myList, guess):
 	if myList[guess] == 'O':
 		print("Correct")
 		print(myList)
@@ -35,7 +35,7 @@ myList = ['O',' ',' ']
 shuffle_list(myList)
 
 #Ask for a guess to a user
-userGuess = enterGuess()
+userGuess = enter_Guess()
 
 #Check the guess with the list
-checkGuess(myList,userGuess)
+check_Guess(myList,userGuess)
